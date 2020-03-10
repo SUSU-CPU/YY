@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.auto-img {
+  width: 100%;
+  display: block;
+}
+
+.weatherBox {
+  width: calc(100% - 30px);
+  height: calc(100% - 40px);
+  padding: 25px 15px 15px;
+  background: url('../images/bg.jpg') no-repeat;
+  position: relative;
+  background-size: 100%;
+}
+
+.weatherBox .nav {
+  width: 100%;
+  height: .5rem;
+
+}
+
+.weatherBox .nav .icon {
+  width: .25rem;
+  height: .25rem;
+  margin-top: .06rem;
+  padding: .06rem;
+  opacity: .9;
+}
+
+.weatherBox .nav .search {
+  width: 55%;
+  height: 100%;
+  margin-left: .15rem;
+  position: relative;
+  transition: 'width'.5s;
+}
+
+.weatherBox .nav .search .inp {
+  width: calc(100% - 12px);
+  height: 55%;
+  padding: 0 0 0 10px;
+  margin: 0;
+  outline: none;
+  border: 1px solid rgba(203, 218, 200, .8);
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  opacity: .7;
+  background: #fff;
+}
+
+.weatherBox .nav .city {
+  min-width: .32rem;
+  margin-top: .16rem;
+  font-size: .16rem;
+}
+
+.weather-bottom {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 25%;
+  background: url(../images/bottom-bg.png) no-repeat;
+  background-size: 100%;
+}
+
+.weather-bottom .week-hour {
+  width: calc(100% - .5rem);
+  padding: .2rem .25rem;
+  text-align: center;
+}
+
+.weather-bottom .week-hour>p {
+  padding: .15rem 0;
+  font-size: .2rem;
+  color: rgb(158, 158, 158);
+  font-weight: bold
+}
+
+.week-hour .foreBox {
+  width: 100%;
+  overflow-y: auto;
+}
+
+.week-hour .foreBox ul {
+  width: calc(.65rem * 24);
+  overflow: hidden;
+}
+
+.week-hour .foreBox ul li {
+  width: .65rem;
+  height: 100%;
+  text-align: center;
+  float: left;
+}
+
+.foreBox .time {
+  font-size: .17rem;
+  color: #656565;
+}
+
+.foreBox .realImg {
+  width: .35rem;
+  margin: 0 auto;
+}
+
+.foreBox .realTemp {
+  font-size: .16rem;
+  color: #828282;
+}
+
+.today-weather {
+  width: calc(100% - .5rem);
+  height: calc(1.5rem - .55rem);
+  padding: .1rem .25rem .45rem;
+  margin-top: 40px;
+}
+
+.today-weather .w-icon {
+  width: calc(1.3rem - .2rem);
+  height: 100%;
+  padding: 0 .1rem;
+
+}
+
+.today-weather .w-content {
+  width: calc(60% - .1rem);
+  height: calc(100% - .1rem);
+  padding-left: .1rem;
+  padding-top: .1rem;
+}
+
+.w-content .temp {
+  width: calc(100% - 10px);
+  height: calc(100% - 20px);
+  padding: 10px 0 10px 10px;
+}
+
+.w-content .temp p:nth-child(1) {
+  font-size: .3rem;
+  font-weight: bold;
+}
+
+.w-content .temp p a:nth-child(2) {
+  display: inline-block;
+  padding: .02rem .1rem;
+  font-size: .2rem;
+  background: rgb(177, 115, 248);
+  color: #fff;
+  font-weight: bold;
+}
+
+.w-content .temp p a:nth-child(1) {
+  display: inline-block;
+  width: 50%;
+  font-size: .28rem;
+  font-weight: bold;
+}
+
+.week-weather {
+  width: calc(100% - .4rem);
+  height: 2.5rem;
+  margin: .3rem .2rem;
+  background: #fff;
+  box-shadow: 0px 3px 5px 2px #CCCCC0;
+}
+
+.week-date {
+  width: calc(100% - .2rem);
+  height: calc(75% - .25rem);
+  padding: .1rem .1rem 0 .1rem;
+}
+
+.week-date ul {
+  width: 100%;
+  height: 100%;
+}
+
+.week-date li {
+  width: calc(100%/5 - .24rem);
+  height: 100%;
+  float: left;
+  text-align: center;
+  padding: 0 .12rem;
+}
+
+.curve {
+  width: calc(100% - .2rem);
+  height: calc(25% + .1rem);
+  padding: 0 .1rem .05rem;
+}
+
+.week-date .weekT {
+  font-size: .19rem;
+  color: #828282;
+}
+
+.week-date .img {
+  width: .4rem;
+  margin: .1rem auto;
+}
+
+.week-date .img>img {
+  margin: 0 auto;
+}
+
+.week-date .date {
+  font-size: .14rem;
+  color: #AAAAAA;
+}
+
+.week-date .maxT,
+.week-date .minT {
+  font-size: .18rem;
+}
+
+.week-date .maxT {
+  color: #656565;
+}
+
+.weekDay {
+  font-size: .18rem;
+}
+
+.curve .liveIndex {
+  width: 100%;
+  height: 100%;
+}
+
+.liveIndex ul {
+  width: 100%;
+  height: 100%;
+}
+
+.liveIndex li {
+  float: left;
+  width: calc(100%/4);
+  height: 100%;
+  text-align: center;
+}
+
+.liveIndex .liveImg {
+  display: block;
+  width: .275rem;
+  margin: 0 auto;
+}
+
+.liveIndex .live_ret {
+  margin: .06rem 0 0;
+  font-size: .15rem;
+}
+
+.liveIndex .liveType {
+  font-size: .14rem;
+  color: #AAAAAA;
+}
